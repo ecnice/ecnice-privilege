@@ -151,6 +151,31 @@ public class SystemConfigController extends BaseController {
 		}
 		return JsonUtils.toJson(vo);
 	}
+	
+	/**
+	 * 修改个性化配置
+	 * @param systemConfig
+	 * @return
+	 */
+	@ResponseBody
+	@RequestMapping("/updatePerson")
+	public String updatePerson(SystemConfig systemConfig) {
+		SimpleReturnVo vo = null;
+		String perValue = systemConfig.getConfigValue();
+		try {
+			SystemConfig oldSystemConfig = systemConfigService.findSystemConfigByKey(systemConfig.getConfigKey());
+			oldSystemConfig.setConfigValue(perValue);
+			systemConfigService.updateSystemConfig(oldSystemConfig);
+			vo = new SimpleReturnVo(SUCCESS, "成功");
+			//把配置信息放到servletContext中一份
+			this.setSystemConfigsInfoToServletContext();
+		} catch (Exception e) {
+			e.printStackTrace();
+			logger.debug("SystemConfigController-update:" + e.getMessage());
+			vo = new SimpleReturnVo(FAIL, "异常");
+		}
+		return JsonUtils.toJson(vo);
+	}
 
 	@ResponseBody
 	@RequestMapping("/delete")
@@ -235,6 +260,8 @@ public class SystemConfigController extends BaseController {
 	@RequestMapping("/uploadImageUI")
 	public String uploadImageUI(String sessionId,ModelMap model) {
 		model.addAttribute("sessionId", sessionId);
+		//得到系统配置信息
+		super.getSystemConfigsInfoToModelMap(model);
 		return "/system/common_conf";
 	}
 	

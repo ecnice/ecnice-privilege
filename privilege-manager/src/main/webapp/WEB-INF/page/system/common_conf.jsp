@@ -66,6 +66,22 @@
 	        					<input type="button" class="uploadButton" id="uploadFavicon" value="修改Favicon">
 							</td>
 						</tr>
+						<tr>
+							<th >
+								<input type="text" id="companyName" class="ipt easyui-validatebox" style="width:300px;color:#999" value="${companyName}">
+							</th>
+							<td>
+	        					<input type="button" class="uploadButton" id="uploadCompany" onclick="updateInfo('companyName')" value="修改公司名称">
+							</td>
+						</tr>
+						<tr>
+							<th >
+								<input type="text" id="plainName" class="ipt easyui-validatebox" style="width:300px;color:#999" value="${plainName}">
+							</th>
+							<td>
+	        					<input type="button" class="uploadButton" id="uploadCompany" onclick="updateInfo('plainName')" value="修改平台名称">
+							</td>
+						</tr>
 					</tbody>
 				</table>
 			</div>
@@ -108,5 +124,25 @@ $(function () {
 	    }
 	});
 });
+
+function updateInfo(name) {
+	var key,sysValue;
+	if(name=='plainName') {
+		key = "plain_name";
+		sysValue = $("#plainName").val();
+	}else {
+		key = "company_name";
+		sysValue = $("#companyName").val();
+	}
+	var _url = "${basePath}/managment/system/systemConfig/updatePerson.do?sessionId==${sessionId}";
+	$.post(_url, {configKey:key,configValue:sysValue},
+			function(data) {
+				if (data.responseCode == 100) {
+					showSuc('操作成功');
+				}else {
+					showWarn("操作失败,请联系系统管理员");
+				}
+		}, 'json');
+}
 </SCRIPT>
 </html>
