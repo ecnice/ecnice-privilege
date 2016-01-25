@@ -5,10 +5,6 @@
 <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
 <%@include file="/WEB-INF/page/share/taglib.jsp"%>
 <%@ include file="/WEB-INF/page/share/dosearch.jspf"%>
-<script src="//ajax.googleapis.com/ajax/libs/jquery/1.8.3/jquery.min.js"></script>
-<script src="js/vendor/jquery.ui.widget.js"></script>
-<script src="js/jquery.iframe-transport.js"></script>
-<script src="js/jquery.fileupload.js"></script>
 <c:set var="systemSn" value="privilege" scope="page" />
 <c:set var="nameSpace" value="loginlog" scope="page" />
 <title>登录日志列表</title>
