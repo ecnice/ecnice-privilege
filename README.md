@@ -14,14 +14,14 @@
 * [liunx安装](#liunxtext)
 
 ##<a name="windowstext"/>windows安装
-* 第一步：下载https://github.com/ecnice001/privilege/tree/master/privilege-manager/target/privilege-manager.war
+* 第一步：下载http://pan.baidu.com/s/1skrBmR7/privilege-manager.war
 * 第二步：创建一个数据库privilege_b
 * 第三步：执行这个sql。路径privilege->src->sql->privilege_b.sql
 * 第四步：修改/privilege-core/src/main/resources/config/application.properties文件，改成自己的数据库主机，端口，帐号和密码
 * 第五步：创建一个web容器，直接运行即可
 
 ##<a name="liunxtext"/>liunx安装
-* 第一步：下载https://github.com/ecnice001/privilege/tree/master/privilege-manager/target/privilege-manager.war
+* 第一步：下载http://pan.baidu.com/s/1skrBmR7/privilege-manager.war
 * 第二步：创建一个数据库privilege_b
 * 第三步：执行这个sql。路径privilege->src->sql->privilege_b.sql
 * 第四步：创建一个目录/etc/config/privilege 命令 mkdir -p /etc/config/privilege
