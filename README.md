@@ -1,4 +1,3 @@
-<<<<<<< HEAD
 权限系统说明书
 ===========================
 适合中小型企业后台权限系统，希望大家多多提出意见
@@ -29,9 +28,3 @@
 * 第五步：把/privilege-core/src/main/resources/config/application.properties拷贝到上面的目录下面
 * 第六步：改成自己的数据库主机，端口，帐号和密码
 * 第七步：把privilege-manager.war放到tomcat中，直接运行即可
-
-
-=======
-# privilege
-权限
->>>>>>> branch 'master' of https://github.com/ecnice/privilege.git
