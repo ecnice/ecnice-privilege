@@ -63,7 +63,7 @@
 	        					<span id="loading" style="display:none;">Loading…</span>
 							</th>
 							<td>
-	        					<input type="button" class="uploadButton" id="uploadFavicon" value="修改favicon">
+	        					<input type="button" class="uploadButton" id="uploadFavicon" value="修改Favicon">
 							</td>
 						</tr>
 					</tbody>
