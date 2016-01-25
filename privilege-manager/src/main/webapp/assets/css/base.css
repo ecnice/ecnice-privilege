@@ -64,7 +64,7 @@ a:hover{color:#ff5000;text-decoration:none}
 #Validform_msg .Validform_info{padding:8px;border:1px solid #bbb;border-top:none;text-align:left;}
 
 .header{border:none;overflow:hidden;min-width:990px;background:#e1ecfa url(../images/header_bg.png) repeat-x;}
-.header_nav_index{height:70px;background:url(../images/logo.png) left center no-repeat;margin-left: 10px;}
+.header_nav_index{height:70px;background:url(../images/ec-logo.png) left center no-repeat;margin-left: 10px;}
 .logo{ float:left;text-indent:-1000px;}
 .header_nav .bd{float:right;margin:8px 5px 0 0;}
 .nav-menu, .nav-menu li, .nav-menu li.curr a, .nav-menu li.curr span { background:url(../images/menu.png) no-repeat;}
