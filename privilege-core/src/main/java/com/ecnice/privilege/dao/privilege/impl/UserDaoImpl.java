@@ -24,6 +24,10 @@ public class UserDaoImpl extends MybatisTemplate implements IUserDao {
 	public List<User> getSystemUsersBySystemSn(String systemSn) {
 		return (List<User>) selectList("UserXML.getSystemUsersBySystemSn", systemSn);
 	}
+	
+	public static void main(String[] args) {
+		System.out.println(MD5Util.getMD5String("iceasy2014888888"));
+	}
 
 	@Override
 	public User login(String username, String password) throws Exception{

@@ -233,7 +233,8 @@ public class SystemConfigController extends BaseController {
 	 * @return
 	 */
 	@RequestMapping("/uploadImageUI")
-	public String uploadImageUI(){
+	public String uploadImageUI(String sessionId,ModelMap model) {
+		model.addAttribute("sessionId", sessionId);
 		return "/system/common_conf";
 	}
 	
@@ -246,28 +247,20 @@ public class SystemConfigController extends BaseController {
 	 */
 	@ResponseBody
 	@RequestMapping("/uploadImage")
-	@Permission(systemSn="privilege",moduleSn="config",value=PermissionConatant.U)
-	public String uploadImage(MultipartFile file,SystemConfig sysConfig){
+	public String uploadImage(MultipartFile filedata,String filename){
 		String destFilePath = "";
 		try{
-			if (StringUtils.isNotBlank(sysConfig.getConfigKey())) {
-				String configKey = sysConfig.getConfigKey();
-				
+			if (StringUtils.isNotBlank(filename)) {
 				StringBuilder path = new StringBuilder();
 				path.append(ServletContextUtil.getServletContext().getRealPath("/"));
-
-				if (configKey.trim().equals(PrivilegeConstant.PLAIN_LOGO)) {
-					path.append("/assets/images/logo.png");
-				} else if (configKey.trim().equals(PrivilegeConstant.PLAN_ICON)) {
+				if("logo".equals(filename)) {
+					path.append("/assets/images/ec-logo.png");
+				}else if("favicon".equals(filename)) {
 					path.append("/images/favicon.ico");
 				}
 				destFilePath = path.toString();
 				// 拿到上传文件的输入流
-				FileInputStream in = (FileInputStream) file.getInputStream();
-				
-//				sysConfig.setImage(input2byte(file.getInputStream()).toString());
-				this.systemConfigService.updateSystemConfig(sysConfig);
-
+				InputStream in = filedata.getInputStream();
 				FileOutputStream os = new FileOutputStream(destFilePath);
 				// 以写字节的方式写文件
 				int b = 0;
@@ -284,7 +277,6 @@ public class SystemConfigController extends BaseController {
 			JsonUtils.toJson(new SimpleReturnVo(0, "上传失败")); 
 		}
 		SimpleReturnVo returnVO = new SimpleReturnVo(this.SUCCESS, destFilePath);
-		
 		return JsonUtils.toJson(returnVO);
 	}
 	
