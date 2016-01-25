@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 权限系统说明书
 ===========================
 适合中小型企业后台权限系统，希望大家多多提出意见
@@ -30,3 +31,7 @@
 * 第七步：把privilege-manager.war放到tomcat中，直接运行即可
 
 
+=======
+# privilege
+权限
+>>>>>>> branch 'master' of https://github.com/ecnice/privilege.git
