@@ -227,6 +227,17 @@ public class SystemConfigController extends BaseController {
 		return "0";
 	}
 	
+	
+	/**
+	 * 个性化上传图片
+	 * @return
+	 */
+	@RequestMapping("/uploadImageUI")
+	public String uploadImageUI(){
+		return "/system/common_conf";
+	}
+	
+	
 	/**
 	 * 描述：文件上传 
 	 * @param file
