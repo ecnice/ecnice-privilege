@@ -45,7 +45,7 @@
 		<div class="easyui-layout" data-options="" id="subLayout">
 
 			<div id="commonPanel" class="easyui-panel"
-				data-options="title:'上传个性化图标',cls:'mt20',plain:true,fitWidth:true">
+				data-options="title:'个性化图标',cls:'mt20',plain:true,fitWidth:true">
 				<table class="form-tb">
 					<tbody>
 						<tr>
@@ -66,26 +66,32 @@
 	        					<input type="button" class="uploadButton" id="uploadFavicon" value="修改Favicon">
 							</td>
 						</tr>
-						<tr>
+					</tbody>
+				</table>
+			</div>
+			<div id="commonPanel" class="easyui-panel"
+				data-options="title:'个性化配置',cls:'mt20',plain:true,fitWidth:true">
+				<table class="form-tb">
+					<tbody>
+							<tr>
+								<th >
+									修改公司名称：<input type="text" id="companyName" class="ipt easyui-validatebox" style="width:300px;color:#999" value="${companyName}">
+								</th>
+								<td>
+		        					<input type="button" class="uploadButton" id="uploadCompany" onclick="updateInfo('companyName')" value="修改">
+								</td>
+							</tr>
+							<tr>
 							<th >
-								<input type="text" id="companyName" class="ipt easyui-validatebox" style="width:300px;color:#999" value="${companyName}">
+								修改平台名称：<input type="text" id="plainName" class="ipt easyui-validatebox" style="width:300px;color:#999" value="${plainName}">
 							</th>
 							<td>
-	        					<input type="button" class="uploadButton" id="uploadCompany" onclick="updateInfo('companyName')" value="修改公司名称">
-							</td>
-						</tr>
-						<tr>
-							<th >
-								<input type="text" id="plainName" class="ipt easyui-validatebox" style="width:300px;color:#999" value="${plainName}">
-							</th>
-							<td>
-	        					<input type="button" class="uploadButton" id="uploadCompany" onclick="updateInfo('plainName')" value="修改平台名称">
+	        					<input type="button" class="uploadButton" id="uploadCompany" onclick="updateInfo('plainName')" value="修改">
 							</td>
 						</tr>
 					</tbody>
 				</table>
 			</div>
-
 		</div>
 	</div>
 </body>
