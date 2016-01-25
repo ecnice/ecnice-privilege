@@ -156,7 +156,10 @@ public class LoginController extends BaseController {
 	}
 	
 	@RequestMapping("/index")
-	public String index() {
+	public String index(ModelMap model) {
+		model.put("copy", PrivilegeConstant.COMPANY_COPY);
+		//得到系统配置信息
+		super.getSystemConfigsInfoToModelMap(model);
 		return "/index";
 	}
 }
