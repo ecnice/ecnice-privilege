@@ -114,5 +114,5 @@
 	</aop:config>
 	
 	<!-- 配置dubbo公共配置 -->
-	<import resource="classpath*:/config/privilege_dubbo_api.xml"/>
+	<!--<import resource="classpath*:/config/privilege_dubbo_api.xml"/> -->
 </beans>
