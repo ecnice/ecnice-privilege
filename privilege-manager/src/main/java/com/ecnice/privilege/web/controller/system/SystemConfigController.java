@@ -254,7 +254,7 @@ public class SystemConfigController extends BaseController {
 				// 拿到上传文件的输入流
 				FileInputStream in = (FileInputStream) file.getInputStream();
 				
-				sysConfig.setImage(input2byte(file.getInputStream()).toString());
+//				sysConfig.setImage(input2byte(file.getInputStream()).toString());
 				this.systemConfigService.updateSystemConfig(sysConfig);
 
 				FileOutputStream os = new FileOutputStream(destFilePath);
