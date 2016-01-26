@@ -5,8 +5,8 @@
 	<modelVersion>4.0.0</modelVersion>
 	<parent>
 		<groupId>com.ecnice</groupId>
-		<artifactId>base</artifactId>
-		<version>1.0</version>
+		<artifactId>privilege</artifactId>
+		<version>1.0.1</version>
 	</parent>
 	<artifactId>privilege-manager</artifactId>
 	<version>0.0.1-SNAPSHOT</version>
