@@ -318,7 +318,7 @@
 							if(vflag){
 								btnValue='取消';
 							}
-							var btnhtml='<input class="mbtn btn btnplan" id="'+row.id+'" type="button" value="'+btnValue+'" style="cursor:pointer;"/>';
+							var btnhtml='<input class="mbtn btn btnplan white" id="'+row.id+'" type="button" value="'+btnValue+'" style="cursor:pointer;"/>';
 							//自动换行div
 							var _autoHuanhangDivStart='<div style="width:370px;white-space: normal;">';
 							var _autoHuanhangDivEnd='</div>';
