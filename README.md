@@ -12,6 +12,7 @@
 ##<a name="index"/>目录
 * [windows安装](#windowstext)
 * [liunx安装](#liunxtext)
+* [预览](#show)
 
 ##<a name="windowstext"/>windows安装
 * 第一步：下载http://pan.baidu.com/s/1nuu104D
@@ -29,5 +30,7 @@
 * 第五步：把/privilege-core/src/main/resources/config/application.properties拷贝到上面的目录下面
 * 第六步：改成自己的数据库主机，端口，帐号和密码
 * 第七步：把privilege-manager.war放到tomcat中，直接运行即可
-* 
+
+##<a name="show"/>预览
+* [图片链接](http://pan.baidu.com/s/1eRsDNEi)
 
