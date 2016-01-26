@@ -29,3 +29,5 @@
 * 第五步：把/privilege-core/src/main/resources/config/application.properties拷贝到上面的目录下面
 * 第六步：改成自己的数据库主机，端口，帐号和密码
 * 第七步：把privilege-manager.war放到tomcat中，直接运行即可
+* 
+
