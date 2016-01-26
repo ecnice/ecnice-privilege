@@ -195,7 +195,10 @@ public class AclServiceImpl implements IAclService {
 		// 1.通过sessionId我们得到存放在redis中的sessionId的值
 		CacheEntity ce = CacheListHandler.getCache(sessionId);
 		// 2.转化成SessionMap对象
-		SessionMap sessionMap = (SessionMap) ce.getCacheContext();
+		SessionMap sessionMap = null;
+		if(ce!=null) {
+			sessionMap = (SessionMap) ce.getCacheContext();
+		}
 		if (sessionMap == null) {
 			return false;
 		}
