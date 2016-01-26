@@ -14,7 +14,7 @@
 * [liunx安装](#liunxtext)
 
 ##<a name="windowstext"/>windows安装
-* 第一步：下载http://pan.baidu.com/s/1boqbX07
+* 第一步：下载http://pan.baidu.com/s/1nuu104D
 * 第二步：创建一个数据库privilege_b
 * 第三步：执行这个sql。路径privilege->src->sql->privilege_b.sql
 * 第四步：修改privilege-manager.war包解压的lib目录下的privilege-core-0.0.1-SNAPSHOT.jar
@@ -22,7 +22,7 @@
 * 第五步：安装web容器，直接把privilege-manager.war放入运行即可
 
 ##<a name="liunxtext"/>liunx安装
-* 第一步：下载http://pan.baidu.com/s/1boqbX07
+* 第一步：下载http://pan.baidu.com/s/1nuu104D
 * 第二步：创建一个数据库privilege_b
 * 第三步：执行这个sql。路径privilege->src->sql->privilege_b.sql
 * 第四步：创建一个目录/etc/config/privilege 命令 mkdir -p /etc/config/privilege
