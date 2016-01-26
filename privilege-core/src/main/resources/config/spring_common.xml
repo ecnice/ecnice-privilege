@@ -17,11 +17,11 @@
 	<context:component-scan base-package="com.ecnice"
 		annotation-config="true" />
 
-	<bean class="com.mhome.tools.common.SpringContextHolder" lazy-init="false" />
-	<bean class="com.mhome.tools.common.ServletContextUtil" lazy-init="false" />
+	<bean class="com.ecnice.tools.common.SpringContextHolder" lazy-init="false" />
+	<bean class="com.ecnice.tools.common.ServletContextUtil" lazy-init="false" />
 
 	<!-- 加载配置文件 -->
-	<bean id="propertyMananger" class="com.mhome.tools.common.DecryptPropertyPlaceholderConfigurer">
+	<bean id="propertyMananger" class="com.ecnice.tools.common.DecryptPropertyPlaceholderConfigurer">
 		<property name="locations">
 			<list>
 				<value>application.properties</value>
@@ -35,7 +35,7 @@
 	</bean>
 	
 	<!-- 读取配置文件 -->
-	<bean id="readProperty" class="com.mhome.tools.common.ReadProperty">
+	<bean id="readProperty" class="com.ecnice.tools.common.ReadProperty">
 		<property name="dppc" ref="propertyMananger" />
 	</bean>
 

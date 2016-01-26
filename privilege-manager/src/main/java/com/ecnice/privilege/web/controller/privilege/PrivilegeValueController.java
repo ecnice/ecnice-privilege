@@ -15,7 +15,7 @@ import com.ecnice.privilege.constant.ReturnCode;
 import com.ecnice.privilege.model.privilege.SystemPrivilegeValue;
 import com.ecnice.privilege.service.privilege.ISystemPrivilegeValueService;
 import com.ecnice.privilege.vo.ReturnVo;
-import com.mhome.tools.common.JsonUtils;
+import com.ecnice.tools.common.JsonUtils;
 
 /** 
  * @Description:系统权限值controller

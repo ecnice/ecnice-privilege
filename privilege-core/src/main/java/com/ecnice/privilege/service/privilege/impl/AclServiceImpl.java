@@ -26,8 +26,8 @@ import com.ecnice.privilege.model.privilege.Module;
 import com.ecnice.privilege.model.privilege.Role;
 import com.ecnice.privilege.service.privilege.IAclService;
 import com.ecnice.privilege.utils.JsonUtils;
+import com.ecnice.tools.common.UUIDGenerator;
 import com.google.gson.reflect.TypeToken;
-import com.mhome.tools.common.UUIDGenerator;
 
 /**
  * @Title:

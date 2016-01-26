@@ -25,7 +25,7 @@ import com.ecnice.privilege.model.privilege.Module;
 import com.ecnice.privilege.model.privilege.SystemPrivilegeValue;
 import com.ecnice.privilege.service.privilege.IAclService;
 import com.ecnice.privilege.service.privilege.IModuleService;
-import com.mhome.tools.common.UUIDGenerator;
+import com.ecnice.tools.common.UUIDGenerator;
 
 /**
  * 模块管理

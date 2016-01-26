@@ -13,7 +13,6 @@ import com.ecnice.privilege.common.Query;
 import com.ecnice.privilege.dao.privilege.ISystemPrivilegeValueDao;
 import com.ecnice.privilege.model.privilege.SystemPrivilegeValue;
 import com.ecnice.privilege.service.privilege.ISystemPrivilegeValueService;
-import com.mhome.tools.common.UUIDGenerator;
 
 /**
  * @author martin.wang

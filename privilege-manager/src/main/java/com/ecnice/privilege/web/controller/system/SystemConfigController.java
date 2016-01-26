@@ -2,7 +2,6 @@ package com.ecnice.privilege.web.controller.system;
 
 import java.io.ByteArrayInputStream;
 import java.io.ByteArrayOutputStream;
-import java.io.FileInputStream;
 import java.io.FileOutputStream;
 import java.io.IOException;
 import java.io.InputStream;
@@ -23,13 +22,12 @@ import com.ecnice.privilege.common.PagerModel;
 import com.ecnice.privilege.common.Permission;
 import com.ecnice.privilege.common.Query;
 import com.ecnice.privilege.constant.PermissionConatant;
-import com.ecnice.privilege.constant.PrivilegeConstant;
 import com.ecnice.privilege.model.system.SystemConfig;
 import com.ecnice.privilege.service.system.ISystemConfigService;
 import com.ecnice.privilege.utils.JsonUtils;
 import com.ecnice.privilege.vo.SimpleReturnVo;
 import com.ecnice.privilege.web.controller.BaseController;
-import com.mhome.tools.common.ServletContextUtil;
+import com.ecnice.tools.common.ServletContextUtil;
 
 /**
  * @Title:

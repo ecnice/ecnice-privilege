@@ -15,7 +15,7 @@ import com.ecnice.privilege.dao.privilege.ISystemPrivilegeValueDao;
 import com.ecnice.privilege.model.privilege.ICSystem;
 import com.ecnice.privilege.model.privilege.Module;
 import com.ecnice.privilege.service.privilege.IICSystemService;
-import com.mhome.tools.common.UUIDGenerator;
+import com.ecnice.tools.common.UUIDGenerator;
 
 @Service
 public class ICSystemServiceImpl implements IICSystemService {

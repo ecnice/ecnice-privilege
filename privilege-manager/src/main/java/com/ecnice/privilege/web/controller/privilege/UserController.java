@@ -32,7 +32,7 @@ import com.ecnice.privilege.utils.JsonUtils;
 import com.ecnice.privilege.utils.WebUtils;
 import com.ecnice.privilege.vo.SimpleReturnVo;
 import com.ecnice.privilege.web.controller.BaseController;
-import com.mhome.tools.common.MD5Util;
+import com.ecnice.tools.common.MD5Util;
 
 /**
  * 

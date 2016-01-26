@@ -18,7 +18,7 @@ import com.ecnice.privilege.common.SessionMap;
 import com.ecnice.privilege.constant.PrivilegeConstant;
 import com.ecnice.privilege.service.privilege.IAclService;
 import com.ecnice.privilege.utils.WebUtils;
-import com.mhome.tools.common.Base64Utils;
+import com.ecnice.tools.common.Base64Utils;
 
 /**
  * 权限拦截器
