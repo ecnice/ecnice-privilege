@@ -53,8 +53,8 @@
 								<img alt="" src="${basePath }/assets/images/ec-logo.png">
 		        				<span id="loading" style="display:none;">Loading…</span>
 		        			</th>
-							<td style="width: 120px;">
-								<input type="button" class="uploadButton" id="uploadLogo" value="修改Logo">
+							<td style="width: 240px;">
+								<input type="button" class="uploadButton" id="uploadLogo" value="修改Logo">（图片大小420×60）
 							</td>
 						</tr>
 						<tr>
