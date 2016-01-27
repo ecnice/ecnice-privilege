@@ -4,7 +4,6 @@ import java.util.List;
 
 import javax.annotation.Resource;
 
-import org.apache.commons.lang.StringUtils;
 import org.apache.log4j.Logger;
 import org.springframework.stereotype.Controller;
 import org.springframework.ui.ModelMap;
@@ -92,7 +91,9 @@ public class ACLController extends BaseController {
 	@Permission(systemSn="privilege",moduleSn="role",value=PermissionConatant.C)
 	public void setAcl(ACL params,Integer position,boolean yes) {
 		try {
-			this.aclService.createAcl(params, position, yes);
+			if(position!=null) {
+				this.aclService.createAcl(params, position, yes);
+			}
 		} catch (Exception e) {
 			e.printStackTrace();
 			logger.debug("ACLController-getPriValByModuleId:" + e.getMessage());
