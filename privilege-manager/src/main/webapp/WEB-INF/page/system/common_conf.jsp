@@ -75,7 +75,7 @@
 					<tbody>
 							<tr>
 								<th >
-									修改公司名称：<input type="text" id="companyName" class="ipt easyui-validatebox" style="width:300px;color:#999" value="${companyName}">
+									修改公司名称：<input type="text" id="companyName" class="ipt easyui-validatebox" style="width:300px;" value="${companyName}">
 								</th>
 								<td>
 		        					<input type="button" class="uploadButton" id="uploadCompany" onclick="updateInfo('companyName')" value="修改">
@@ -83,7 +83,7 @@
 							</tr>
 							<tr>
 							<th >
-								修改平台名称：<input type="text" id="plainName" class="ipt easyui-validatebox" style="width:300px;color:#999" value="${plainName}">
+								修改平台名称：<input type="text" id="plainName" class="ipt easyui-validatebox" style="width:300px;" value="${plainName}">
 							</th>
 							<td>
 	        					<input type="button" class="uploadButton" id="uploadCompany" onclick="updateInfo('plainName')" value="修改">
