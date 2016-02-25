@@ -4,7 +4,7 @@
 
 ****
 ###　团队:bruce.liu,wanghuan,xietongjian,tuanzuo
-###　邮箱:463805737@qq.com,303320076@qq.com
+###　邮箱:liuwenjun05101@126.com,303320076@qq.com
 ###      583110978@qq.com,824954861@qq.com
 ###  qq群：41461832
 
