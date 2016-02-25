@@ -99,7 +99,6 @@ public class PrivilegeApiImpl implements IPrivilegeApi {
 		returnVo.setStatus(PrivilegeConstant.ERROR_CODE);
 		returnVo.setMessage("没有权限");
 		
-		
 		boolean falg=false;
 		try {
 			falg = aclService.hasPermission(sessionId, systemSn, moduleSn, permission);

@@ -16,7 +16,6 @@ import com.ecnice.privilege.vo.privilege.UserAcls;
  * 
  * @Author:Bruce.Liu
  * @Since:2014年4月16日
- * @Version:1.1.0 浙江蘑菇加电子商务有限公司 2014 ~ 2015 版权所有
  */
 public interface IPrivilegeApi {
 	
