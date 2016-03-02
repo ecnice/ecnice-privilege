@@ -14,6 +14,7 @@
 		<result column="updator" property="updator" jdbcType="VARCHAR" />
 		<result column="del_flag" property="delFlag" jdbcType="INTEGER" />
 		<result column="config_order" property="configOrder" jdbcType="INTEGER" />
+		<result column="image" property="image" jdbcType="BLOB" />
 	</resultMap>
 
 	<sql id="Base_Column_List">
@@ -28,7 +29,8 @@
 		update_time,
 		updator,
 		del_flag,
-		config_order
+		config_order,
+		image
 	</sql>
 
 	<sql id="where">
@@ -124,7 +126,8 @@
 		#{updateTime,jdbcType=TIMESTAMP},
 		#{updator,jdbcType=VARCHAR},
 		#{delFlag,jdbcType=INTEGER},
-		#{configOrder,jdbcType=INTEGER}
+		#{configOrder,jdbcType=INTEGER},
+		#{image,jdbcType=BLOB}
 		)
 	</insert>
 
@@ -172,6 +175,9 @@
 			</if>
 			<if test="configOrder != null">
 				config_order = #{configOrder,jdbcType=INTEGER},
+			</if>
+			<if test="image !=null ">
+				image = #{image,jdbcType=BLOB},
 			</if>
 		</set>
 		where ID = #{id,jdbcType=VARCHAR}

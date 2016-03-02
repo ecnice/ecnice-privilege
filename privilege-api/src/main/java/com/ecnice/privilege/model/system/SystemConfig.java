@@ -25,6 +25,8 @@ public class SystemConfig extends BaseModel implements Serializable {
 	private int configOrder;
 	// 备注
 	private String remark;
+	//图片
+	private byte[] image;
 	public String getId() {
 		return id;
 	}
@@ -67,4 +69,11 @@ public class SystemConfig extends BaseModel implements Serializable {
 	public void setConfigOrder(int configOrder) {
 		this.configOrder = configOrder;
 	}
+	public byte[] getImage() {
+		return image;
+	}
+	public void setImage(byte[] image) {
+		this.image = image;
+	}
+	
 }
