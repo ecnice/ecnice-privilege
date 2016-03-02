@@ -161,6 +161,7 @@
 			<if test="createTime != null">
 				create_time = #{createTime,jdbcType=TIMESTAMP},
 			</if>
+			
 			<if test="creator != null">
 				creator = #{creator,jdbcType=VARCHAR},
 			</if>
