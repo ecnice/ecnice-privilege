@@ -27,6 +27,7 @@ public class SystemConfig extends BaseModel implements Serializable {
 	private String remark;
 	//图片
 	private byte[] image;
+	
 	public String getId() {
 		return id;
 	}
