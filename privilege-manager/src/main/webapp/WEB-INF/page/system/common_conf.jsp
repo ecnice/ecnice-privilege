@@ -97,7 +97,7 @@
 </body>
 <SCRIPT LANGUAGE="JavaScript">
 $(function () {
-	//上海窜logo
+	//上传logo
 	$('#uploadLogo').uploader({
 	    url : '${basePath}/managment/system/systemConfig/uploadImage.do?sessionId=${sessionId}',
 	    inputName : 'filedata',
