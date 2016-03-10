@@ -115,9 +115,6 @@ public class ACL extends BaseModel implements Serializable {
 			aclState |= temp;
 		}else{
 			aclState &= ~temp;
-			//aclState^=temp; //也可以使用 ^ 异或    
-			
-			//wenwenwen
 		}
 	}
 	/**
