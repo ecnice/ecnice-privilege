@@ -166,6 +166,10 @@ public class FrameController extends BaseController{
 						systems.add(icSystem);
 					}
 				}
+				if(systems!=null && systems.size()>0) {
+					ICSystem system = systems.get(0);
+					model.addAttribute("systemName", system.getName());
+				}
 			} catch (Exception e) {
 				e.printStackTrace();
 
