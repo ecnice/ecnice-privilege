@@ -50,7 +50,7 @@ request.setAttribute("basePath",basePath);
     <div data-options="region:'south',split:true,border:false" style="height:36px;text-align:center;line-height:36px;">
     	${companyName}${plainName} <span class="arial">&copy; ${copy}</span>
     </div>
-    <div id="leftMenuPanel" data-options="region:'west',title:'权限系统菜单',split:true,border:true" style="width:150px;">
+    <div id="leftMenuPanel" data-options="region:'west',title:'${systemName}菜单',split:true,border:true" style="width:150px;">
     	<ul id="leftMenu" class="" url="${basePath}/managment/frame/systemTree.do?systemId=${systemId}&url=${systemUrl}&sessionId=${sessionId}" data-options="loadFilter : indexTreeLoadFilter" style="width:100%;height:100%;">
         </ul>
     </div>
