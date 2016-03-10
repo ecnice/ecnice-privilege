@@ -102,7 +102,7 @@ $(function () {
 	    url : '${basePath}/managment/system/systemConfig/uploadImage.do?sessionId=${sessionId}',
 	    inputName : 'filedata',
 	    data : {
-	    	filename : 'logo'
+	    	filename : 'plain_logo'
 	    },
 	    onStart : function (data) {
 	        $('#loading').show();
@@ -118,7 +118,7 @@ $(function () {
 	    url : '${basePath}/managment/system/systemConfig/uploadImage.do?sessionId=${sessionId}',
 	    inputName : 'filedata',
 	    data : {
-	    	filename : 'favicon'
+	    	filename : 'plan_icon'
 	    },
 	    onStart : function (data) {
 	        $('#loading').show();
