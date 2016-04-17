@@ -7,7 +7,7 @@ import java.io.Serializable;
  * @Description:返回vo
  * @Author:Bruce.Liu
  * @Since:2014年4月1日
- * @Version:1.1.0浙江蘑菇加电子商务有限公司 2014 ~ 2015 版权所有
+ * @Version:1.1.0XXXXXXXXXXXXXXXXX 2014 ~ 2015 版权所有
  */
 public class SimpleReturnVo implements Serializable{
 	private static final long serialVersionUID = -5799849092170512473L;
