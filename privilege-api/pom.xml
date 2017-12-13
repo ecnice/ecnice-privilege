@@ -4,9 +4,9 @@
 	xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
 	<modelVersion>4.0.0</modelVersion>
 	<parent>
-		<groupId>com.ecnice</groupId>
-		<artifactId>privilege</artifactId>
-		<version>1.0.1</version>
+		<groupId>com.twoDragonLake</groupId>
+		<artifactId>base</artifactId>
+		<version>1.0</version>
 	</parent>
 	<artifactId>privilege-api</artifactId>
 	<version>0.0.1-SNAPSHOT</version>
@@ -22,7 +22,7 @@
 		</dependency>
 	</dependencies>
 	<!-- 部署远程maven仓库里面 -->
-	<distributionManagement>
+<!--	<distributionManagement>
 		<repository>
 			<id>releases</id>
 			<name>Nexus Release Repository</name>
@@ -33,7 +33,7 @@
 			<name>Nexus Snapshot Repository</name>
 			<url>http://10.10.20.210:8044/content/repositories/snapshots/</url>
 		</snapshotRepository>
-	</distributionManagement>
+	</distributionManagement>-->
 	<!-- 发布源代码 -->
 	<build>
 		<plugins>
