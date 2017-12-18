@@ -2,4 +2,12 @@
 /.idea
 /bin
 .project
-
+/.settinngs
+/.idea
+*target*
+*.settings*
+*bin*
+*.classpath*
+*.project*
+*xml.bak*
+*bak*
