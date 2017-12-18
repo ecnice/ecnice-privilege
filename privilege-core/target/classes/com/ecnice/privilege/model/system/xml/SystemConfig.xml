@@ -14,7 +14,7 @@
 		<result column="updator" property="updator" jdbcType="VARCHAR" />
 		<result column="del_flag" property="delFlag" jdbcType="INTEGER" />
 		<result column="config_order" property="configOrder" jdbcType="INTEGER" />
-		<result column="image" property="image" jdbcType="BINARY" />
+		<result column="image" property="image" jdbcType="BLOB" />
 	</resultMap>
 
 	<sql id="Base_Column_List">
@@ -69,9 +69,6 @@
 		</if>
 		<if test="configOrder!=null and configOrder!=0">
 			and config_order = #{configOrder,jdbcType=INTEGER}
-		</if>
-		<if test="image!=null">
-			and image = #{image,jdbcType=BINARY}
 		</if>
 	</sql>
 
@@ -130,7 +127,7 @@
 		#{updator,jdbcType=VARCHAR},
 		#{delFlag,jdbcType=INTEGER},
 		#{configOrder,jdbcType=INTEGER},
-		#{image,jdbcType=BINARY}
+		#{image,jdbcType=BLOB}
 		)
 	</insert>
 
@@ -164,6 +161,7 @@
 			<if test="createTime != null">
 				create_time = #{createTime,jdbcType=TIMESTAMP},
 			</if>
+			
 			<if test="creator != null">
 				creator = #{creator,jdbcType=VARCHAR},
 			</if>
@@ -179,8 +177,8 @@
 			<if test="configOrder != null">
 				config_order = #{configOrder,jdbcType=INTEGER},
 			</if>
-			<if test="image != null">
-				image = #{image,jdbcType=BINARY}
+			<if test="image !=null ">
+				image = #{image,jdbcType=BLOB},
 			</if>
 		</set>
 		where ID = #{id,jdbcType=VARCHAR}
