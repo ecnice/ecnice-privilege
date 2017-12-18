@@ -27,7 +27,7 @@ import com.ecnice.privilege.service.system.ISystemConfigService;
 import com.ecnice.privilege.utils.JsonUtils;
 import com.ecnice.privilege.vo.SimpleReturnVo;
 import com.ecnice.privilege.web.controller.BaseController;
-import com.ecnice.tools.common.ServletContextUtil;
+import com.mhome.tools.common.ServletContextUtil;
 
 /**
  * @Title:

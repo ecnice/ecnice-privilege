@@ -110,7 +110,7 @@
 			<version>1.2</version>
 		</dependency>
 		<dependency>
-			<groupId>com.ecnice</groupId>
+			<groupId>com.twoDragonLake</groupId>
 			<artifactId>privilege-core</artifactId>
 			<version>0.0.1-SNAPSHOT</version>
 		</dependency>

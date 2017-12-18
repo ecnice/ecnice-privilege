@@ -15,7 +15,7 @@ import com.ecnice.privilege.dao.MybatisTemplate;
 import com.ecnice.privilege.dao.privilege.IUserDao;
 import com.ecnice.privilege.model.privilege.User;
 import com.ecnice.privilege.vo.privilege.PrivilegeVo;
-import com.ecnice.tools.common.MD5Util;
+import com.mhome.tools.common.MD5Util;
 
 @Repository
 public class UserDaoImpl extends MybatisTemplate implements IUserDao {

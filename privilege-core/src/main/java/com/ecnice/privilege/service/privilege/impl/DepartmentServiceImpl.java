@@ -11,7 +11,7 @@ import com.ecnice.privilege.common.Query;
 import com.ecnice.privilege.dao.privilege.IDepartmentDao;
 import com.ecnice.privilege.model.privilege.Department;
 import com.ecnice.privilege.service.privilege.IDepartmentService;
-import com.ecnice.tools.common.UUIDGenerator;
+import com.mhome.tools.common.UUIDGenerator;
 
 /**
  * @Title:

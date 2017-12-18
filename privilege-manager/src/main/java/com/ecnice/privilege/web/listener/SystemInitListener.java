@@ -10,8 +10,8 @@ import javax.servlet.ServletContextListener;
 
 import com.ecnice.privilege.model.system.SystemConfig;
 import com.ecnice.privilege.service.system.ISystemConfigService;
-import com.ecnice.tools.common.ServletContextUtil;
-import com.ecnice.tools.common.SpringContextHolder;
+import com.mhome.tools.common.ServletContextUtil;
+import com.mhome.tools.common.SpringContextHolder;
 
 /**
  * @Title:

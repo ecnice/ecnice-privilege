@@ -31,7 +31,7 @@ import com.ecnice.privilege.model.privilege.UserRole;
 import com.ecnice.privilege.model.privilege.UserSystem;
 import com.ecnice.privilege.model.system.SystemConfig;
 import com.ecnice.privilege.service.privilege.InitSystem;
-import com.ecnice.tools.common.UUIDGenerator;
+import com.mhome.tools.common.UUIDGenerator;
 
 /**
  * @Title:

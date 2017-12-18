@@ -31,8 +31,8 @@ import com.ecnice.privilege.vo.ReturnVo;
 import com.ecnice.privilege.vo.privilege.HasPermissionVo;
 import com.ecnice.privilege.vo.privilege.LoginVo;
 import com.ecnice.privilege.vo.privilege.UserAcls;
-import com.ecnice.tools.common.ReadProperty;
 import com.google.gson.reflect.TypeToken;
+import com.mhome.tools.common.ReadProperty;
 
 public class PrivilegeApiImpl implements IPrivilegeApi {
 	

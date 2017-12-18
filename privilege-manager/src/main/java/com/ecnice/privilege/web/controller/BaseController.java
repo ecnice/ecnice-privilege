@@ -10,7 +10,7 @@ import org.springframework.web.multipart.MultipartFile;
 
 import com.ecnice.privilege.constant.PrivilegeConstant;
 import com.ecnice.privilege.model.system.SystemConfig;
-import com.ecnice.tools.common.ServletContextUtil;
+import com.mhome.tools.common.ServletContextUtil;
 
 public class BaseController {
 	// 成功

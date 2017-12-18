@@ -10,7 +10,7 @@ import com.ecnice.privilege.dao.privilege.IUserRoleDao;
 import com.ecnice.privilege.model.privilege.Role;
 import com.ecnice.privilege.model.privilege.UserRole;
 import com.ecnice.privilege.service.privilege.IUserRoleService;
-import com.ecnice.tools.common.UUIDGenerator;
+import com.mhome.tools.common.UUIDGenerator;
 
 /**
  * 

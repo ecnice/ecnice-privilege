@@ -14,7 +14,7 @@ import com.ecnice.privilege.dao.privilege.IUserRoleDao;
 import com.ecnice.privilege.model.privilege.ACL;
 import com.ecnice.privilege.model.privilege.Role;
 import com.ecnice.privilege.service.privilege.IRoleService;
-import com.ecnice.tools.common.UUIDGenerator;
+import com.mhome.tools.common.UUIDGenerator;
 
 /**
  * @Title:

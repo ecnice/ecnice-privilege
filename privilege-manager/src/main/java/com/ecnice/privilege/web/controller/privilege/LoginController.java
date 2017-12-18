@@ -23,7 +23,7 @@ import com.ecnice.privilege.service.privilege.InitSystem;
 import com.ecnice.privilege.service.system.ILoginLogService;
 import com.ecnice.privilege.utils.WebUtils;
 import com.ecnice.privilege.web.controller.BaseController;
-import com.ecnice.tools.common.Base64Utils;
+import com.mhome.tools.common.Base64Utils;
 
 /**
  * @Comment:用户登录

@@ -36,7 +36,7 @@ import com.ecnice.privilege.service.system.ILoginLogService;
 import com.ecnice.privilege.utils.JsonUtils;
 import com.ecnice.privilege.vo.privilege.LoginVo;
 import com.ecnice.privilege.vo.privilege.PrivilegeVo;
-import com.ecnice.tools.common.UUIDGenerator;
+import com.mhome.tools.common.UUIDGenerator;
 
 /**
  * @Description:用户service实现类
