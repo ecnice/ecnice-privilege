@@ -166,10 +166,11 @@
 			<artifactId>cglib</artifactId>
 		</dependency>
 		<dependency>
-			<groupId>org.dom4j</groupId>
-			<artifactId>com.springsource.org.dom4j</artifactId>
-			<version>1.6.1</version>
+		    <groupId>dom4j</groupId>
+		    <artifactId>dom4j</artifactId>
+		    <version>1.6.1</version>
 		</dependency>
+
 		<dependency>
 			<groupId>com.alibaba</groupId>
 			<artifactId>dubbo</artifactId>
@@ -185,7 +186,7 @@
 			<artifactId>zkclient</artifactId>
 		</dependency>
 		<dependency>
-			<groupId>com.ecnice</groupId>
+			<groupId>com.twoDragonLake</groupId>
 			<artifactId>privilege-api</artifactId>
 			<version>0.0.1-SNAPSHOT</version>
 		</dependency>
