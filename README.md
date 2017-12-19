@@ -3,8 +3,7 @@
 适合中小型企业后台权限系统，希望大家多多提出意见
 
 ****
-###　邮箱:liuwenjun05101@126.com
-###  qq群：41461832
+联系我们： http://www.twodragonlake.com
 
 ================================================
 ##<a name="index"/>目录
@@ -26,7 +25,7 @@
 * 第三步：执行这个sql。路径privilege->src->sql->privilege.sql
 * 第四步：创建一个目录/etc/config/privilege 命令 mkdir -p /etc/config/privilege
 * 第五步：把/privilege-core/src/main/resources/config/application.properties拷贝到上面的目录下面
-* 第六步：改成自己的数据库主机，端口，帐号和密码
+* 第六步：改成自己的数据库主机，端口，帐号和密码(admin/admin)
 * 第七步：把privilege-manager.war放到tomcat中，直接运行即可
 
 ##<a name="show"/>预览

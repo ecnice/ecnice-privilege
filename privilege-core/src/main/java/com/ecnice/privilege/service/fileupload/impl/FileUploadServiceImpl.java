@@ -40,6 +40,7 @@ public class FileUploadServiceImpl implements IFileUploadService{
 		}
 		BufferedOutputStream out=new BufferedOutputStream(new FileOutputStream(fileUpload));
 		out.write(file.getBytes());
+		//out.write(file.getBytes());
 		out.flush();
 		out.close();
 		request.getSession().setAttribute("percent", "0%");
