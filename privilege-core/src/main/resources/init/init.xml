@@ -4,7 +4,7 @@
 	<Department id="1" name="电商平台" />
 	<!-- 系统 -->
 	<IcSystem id="1" name="权限系统"
-		url="http://127.0.0.1:8080/privilege-manager/" sn="privilege" />
+		url="http://127.0.0.1:8088/privilege-manager/" sn="privilege" />
 	<!-- 模块 -->
 	<Module id="1" name="权限管理" sn="privilege" url="" orderNo="10"
 		systemId="1" pid="" privilegeValue="query-查询-0" />

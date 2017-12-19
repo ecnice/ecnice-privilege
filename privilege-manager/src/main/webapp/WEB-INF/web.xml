@@ -37,7 +37,7 @@
 	</listener>
 	<!-- 系统配置初始化 -->
 	<listener>
-		<listener-class>com.ecnice.privilege.web.listener.SystemInitListener</listener-class>
+		<listener-class>com.twodragonlake.privilege.web.listener.SystemInitListener</listener-class>
 	</listener>
 	<servlet>
 		<servlet-name>springmvc</servlet-name>
@@ -60,16 +60,16 @@
 	</welcome-file-list>
 
 	<listener>
-		<listener-class>com.ecnice.privilege.web.session.ClusterHttpSessionListener</listener-class>
+		<listener-class>com.twodragonlake.privilege.web.session.ClusterHttpSessionListener</listener-class>
 	</listener>
 
 	<listener>
-		<listener-class>com.ecnice.privilege.web.session.ClusterHttpSessionAttributeListener</listener-class>
+		<listener-class>com.twodragonlake.privilege.web.session.ClusterHttpSessionAttributeListener</listener-class>
 	</listener>
 
 	<filter>
 		<filter-name>snaFilter</filter-name>
-		<filter-class>com.ecnice.privilege.web.session.SnaFilter</filter-class>
+		<filter-class>com.twodragonlake.privilege.web.session.SnaFilter</filter-class>
 		<init-param>
 			<param-name>encoding</param-name>
 			<param-value>UTF-8</param-value>
@@ -82,7 +82,7 @@
 	<!-- 自定义标签 -->
 	<jsp-config>
 		<taglib>
-			<taglib-uri>http://www.ecnice.com/privilege/functions</taglib-uri>
+			<taglib-uri>http://www.twodragonlake.com/privilege/functions</taglib-uri>
 			<taglib-location>/WEB-INF/my.tld</taglib-location>
 		</taglib>
 	</jsp-config>

@@ -5,10 +5,10 @@
 	version="2.0">
 	<tlib-version>1.0</tlib-version>
 	<short-name>my</short-name>
-	<uri>http://www.ecnice.com/privilege/functions</uri>
+	<uri>http://www.twodragonlake.com/privilege/functions</uri>
 	<function>
 		<name>hasPermission</name>
-		<function-class>com.ecnice.privilege.web.function.SecurityFunctions</function-class>
+		<function-class>com.twodragonlake.privilege.web.function.SecurityFunctions</function-class>
 		<function-signature>boolean hasPermission(java.lang.String,java.lang.String,java.lang.String,java.lang.Integer)</function-signature>
 	</function>
 </taglib>

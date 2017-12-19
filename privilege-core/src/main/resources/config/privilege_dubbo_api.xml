@@ -15,8 +15,8 @@
 	<dubbo:protocol name="dubbo" port="20884" dispather="all"
 		threadpool="cached" threads="5000" />
 
-	<dubbo:service interface="com.ecnice.privilege.api.privilege.IPrivilegeApi"
+	<dubbo:service interface="com.twodragonlake.privilege.api.privilege.IPrivilegeApi"
 		ref="privilegeApi" owner="bruce.liu" version="1.0" />
 	<bean id="privilegeApi"
-		class="com.ecnice.privilege.api.privilege.impl.PrivilegeApiImpl" />
+		class="com.twodragonlake.privilege.api.privilege.impl.PrivilegeApiImpl" />
 </beans>

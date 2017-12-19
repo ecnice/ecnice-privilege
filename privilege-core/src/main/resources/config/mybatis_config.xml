@@ -17,20 +17,20 @@
 	<!-- 配置别名 -->
 	<typeAliases>
 		<!-- 权限相关 -->
-		<typeAlias alias="user" type="com.ecnice.privilege.model.privilege.User" />
-		<typeAlias alias="department" type="com.ecnice.privilege.model.privilege.Department" />
-		<typeAlias alias="icSystem" type="com.ecnice.privilege.model.privilege.ICSystem" />
-		<typeAlias alias="module" type="com.ecnice.privilege.model.privilege.Module" />
-		<typeAlias alias="role" type="com.ecnice.privilege.model.privilege.Role" />
-		<typeAlias alias="acl" type="com.ecnice.privilege.model.privilege.ACL" />
-		<typeAlias alias="userRole" type="com.ecnice.privilege.model.privilege.UserRole" />
-		<typeAlias alias="userSystem" type="com.ecnice.privilege.model.privilege.UserSystem" />
-		<typeAlias alias="sessionData" type="com.ecnice.privilege.model.privilege.SessionData" />
-		<typeAlias alias="systemPrivilegeValue" type="com.ecnice.privilege.model.privilege.SystemPrivilegeValue" />
+		<typeAlias alias="user" type="com.twodragonlake.privilege.model.privilege.User" />
+		<typeAlias alias="department" type="com.twodragonlake.privilege.model.privilege.Department" />
+		<typeAlias alias="icSystem" type="com.twodragonlake.privilege.model.privilege.ICSystem" />
+		<typeAlias alias="module" type="com.twodragonlake.privilege.model.privilege.Module" />
+		<typeAlias alias="role" type="com.twodragonlake.privilege.model.privilege.Role" />
+		<typeAlias alias="acl" type="com.twodragonlake.privilege.model.privilege.ACL" />
+		<typeAlias alias="userRole" type="com.twodragonlake.privilege.model.privilege.UserRole" />
+		<typeAlias alias="userSystem" type="com.twodragonlake.privilege.model.privilege.UserSystem" />
+		<typeAlias alias="sessionData" type="com.twodragonlake.privilege.model.privilege.SessionData" />
+		<typeAlias alias="systemPrivilegeValue" type="com.twodragonlake.privilege.model.privilege.SystemPrivilegeValue" />
 		<!-- 系统配置相关 -->
-		<typeAlias alias="systemConfig" type="com.ecnice.privilege.model.system.SystemConfig" />
-		<typeAlias alias="dictionary" type="com.ecnice.privilege.model.system.Dictionary" />
-		<typeAlias alias="loginLog" type="com.ecnice.privilege.model.system.LoginLog" />
+		<typeAlias alias="systemConfig" type="com.twodragonlake.privilege.model.system.SystemConfig" />
+		<typeAlias alias="dictionary" type="com.twodragonlake.privilege.model.system.Dictionary" />
+		<typeAlias alias="loginLog" type="com.twodragonlake.privilege.model.system.LoginLog" />
 	</typeAliases>
 
 	<plugins>

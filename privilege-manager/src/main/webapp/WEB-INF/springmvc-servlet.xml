@@ -37,7 +37,7 @@
 		</property>
 	</bean>
 	<!-- 自动搜索@Controller标注的类 -->
-	<context:component-scan base-package="com.ecnice.privilege.web"
+	<context:component-scan base-package="com.twodragonlake.privilege.web"
 		use-default-filters="false">
 		<context:include-filter type="annotation"
 			expression="org.springframework.stereotype.Controller" />
@@ -75,7 +75,7 @@
 		<property name="basename" value="house" />
 	</bean>
 	<bean id="multipartResolver"
-		class="com.ecnice.privilege.web.controller.fileupload.MyMultipartResolver">
+		class="com.twodragonlake.privilege.web.controller.fileupload.MyMultipartResolver">
 		<property name="defaultEncoding" value="UTF-8" />
 		<property name="maxUploadSize" value="52428800" />
 		<property name="maxInMemorySize" value="20480" />
@@ -85,7 +85,7 @@
 		<mvc:interceptor>
 			<!-- 拦截/showUser/后的所有请求，包括静态资源文件 -->
 			<mvc:mapping path="/managment/**/*.do" />
-			<bean class="com.ecnice.privilege.web.inteceptor.PermissionInteceptor">
+			<bean class="com.twodragonlake.privilege.web.inteceptor.PermissionInteceptor">
 				<property name="aclService" ref="aclServiceImpl" />
 			</bean>
 		</mvc:interceptor>

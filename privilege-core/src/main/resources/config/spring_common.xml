@@ -14,14 +14,14 @@
 	<!-- 开启注解 -->
 	<context:annotation-config />
 	<!-- 使用annotation 自动注册bean -->
-	<context:component-scan base-package="com.ecnice"
+	<context:component-scan base-package="com.twodragonlake"
 		annotation-config="true" />
 
-	<bean class="com.mhome.tools.common.SpringContextHolder" lazy-init="false" />
-	<bean class="com.mhome.tools.common.ServletContextUtil" lazy-init="false" />
+	<bean class="com.twodragonlake.tools.common.SpringContextHolder" lazy-init="false" />
+	<bean class="com.twodragonlake.tools.common.ServletContextUtil" lazy-init="false" />
 
 	<!-- 加载配置文件 -->
-	<bean id="propertyMananger" class="com.mhome.tools.common.DecryptPropertyPlaceholderConfigurer">
+	<bean id="propertyMananger" class="com.twodragonlake.tools.common.DecryptPropertyPlaceholderConfigurer">
 		<property name="locations">
 			<list>
 				<value>application.properties</value>
@@ -35,7 +35,7 @@
 	</bean>
 	
 	<!-- 读取配置文件 -->
-	<bean id="readProperty" class="com.mhome.tools.common.ReadProperty">
+	<bean id="readProperty" class="com.twodragonlake.tools.common.ReadProperty">
 		<property name="dppc" ref="propertyMananger" />
 	</bean>
 
@@ -109,7 +109,7 @@
 	<!-- 定义切面 -->
 	<aop:config proxy-target-class="true">
 		<aop:pointcut id="interceptorPointCuts"
-			expression="execution(* com.ecnice.privilege.service..*.*(..))" />
+			expression="execution(* com.twodragonlake.privilege.service..*.*(..))" />
 		<aop:advisor advice-ref="txAdvice" pointcut-ref="interceptorPointCuts" />
 	</aop:config>
 	
