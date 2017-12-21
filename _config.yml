@@ -1,0 +1,30 @@
+title: Privilege
+email: incoder.xu@gmail.com
+description: >- 
+  高性能、组件化、开源源码权限管理系统.
+baseurl: "" 
+url: "https://github.com/TwoDragonLake/privilege" 
+
+
+# Build settings
+markdown: kramdown
+theme: jekyll-theme-cayman
+plugins:
+  - jekyll-feed
+
+show_downloads: true
+github:
+    zip_url: https://github.com/TwoDragonLake/privilege
+    tar_url: https://github.com/TwoDragonLake/privilege
+
+# Exclude from processing.
+# The following items will not be processed, by default. Create a custom list
+# to override the default setting.
+# exclude:
+#   - Gemfile
+#   - Gemfile.lock
+#   - node_modules
+#   - vendor/bundle/
+#   - vendor/cache/
+#   - vendor/gems/
+#   - vendor/ruby/
